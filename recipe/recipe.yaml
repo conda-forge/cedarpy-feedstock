@@ -11,7 +11,7 @@ source:
   url: https://pypi.org/packages/source/c/cedarpy/cedarpy-${{ version }}.tar.gz
   sha256: bcce86f71a0071d3af5631d4d9e311b4cc66b131d19d1be018810799fc577171
   patches:
-    - bump-pyo3.patch
+    - 0001-chore-Update-PyO3-to-fix-vulnerability.patch
 
 build:
   number: 2
