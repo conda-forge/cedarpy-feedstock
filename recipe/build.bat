@@ -7,6 +7,9 @@ copy %RECIPE_DIR%\cargo-auditable-wrapper.bat %BUILD_PREFIX%\Library\bin\cargo-a
 if %ERRORLEVEL% neq 0 exit 1
 set "CARGO=cargo-auditable-wrapper.bat"
 
+:: Update Cargo.lock to match patched Cargo.toml (pyo3 version bump)
+cargo update -p pyo3 || exit 1
+
 :: Bundle licenses
 cargo-bundle-licenses --format yaml --output "%SRC_DIR%\THIRDPARTY.yml" || exit 1
 

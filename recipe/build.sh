@@ -10,6 +10,9 @@ mkdir -p "${BUILD_PREFIX}/bin"
 cp "${RECIPE_DIR}/cargo-auditable-wrapper.sh" "${BUILD_PREFIX}/bin/cargo-auditable-wrapper"
 export CARGO="cargo-auditable-wrapper"
 
+# Update Cargo.lock to match patched Cargo.toml (pyo3 version bump)
+cargo update -p pyo3
+
 # Bundle licenses
 cargo-bundle-licenses --format yaml --output ${SRC_DIR}/THIRDPARTY.yml
 
