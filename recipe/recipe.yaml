@@ -14,7 +14,7 @@ source:
     - 0001-chore-Update-PyO3-to-fix-vulnerability.patch
 
 build:
-  number: 2
+  number: 3
 
 requirements:
   build:
