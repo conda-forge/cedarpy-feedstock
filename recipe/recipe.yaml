@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "4.8.7"
+  version: "4.12.0"
 
 package:
   name: cedarpy
@@ -9,12 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/cedarpy/cedarpy-${{ version }}.tar.gz
-  sha256: bcce86f71a0071d3af5631d4d9e311b4cc66b131d19d1be018810799fc577171
-  patches:
-    - 0001-chore-Update-PyO3-to-fix-vulnerability.patch
+  sha256: 9d165f2fafeb724eff1b0aa49140c21918c52187bdc283f1227f29e439b7922e
 
 build:
-  number: 3
+  number: 0
 
 requirements:
   build:
