@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "4.12.0"
+  version: "4.12.1"
 
 package:
   name: cedarpy
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/cedarpy/cedarpy-${{ version }}.tar.gz
-  sha256: 9d165f2fafeb724eff1b0aa49140c21918c52187bdc283f1227f29e439b7922e
+  sha256: 357002b436d06ad00cd24c1dc27287933af9c45af0541b0cd9d52036cccfe8c2
 
 build:
   number: 0
